@@ -1,0 +1,118 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.8em;
+    color: #555;
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4 {
+    position: relative;
+    opacity: 0.75;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* if fixed => parallax effect // if scroll => normal (no effect)*/
+    background-attachment: fixed;
+}
+
+.pimg1 {
+    background-image: url(../images/image1.jpeg);
+    min-height: 100%;
+}
+
+.pimg2 {
+    background-image: url(../images/image3.jpeg);
+    min-height: 400px;
+}
+
+.pimg3 {
+    background-image: url(../images/image2.jpeg);
+    min-height: 400px;
+}
+
+.pimg4 {
+    background-image: url(../images/image4.jpeg);
+    min-height: 400px;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px/* 50px top/bottom, 80px for left/right*/
+}
+
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section-dark {
+    background-color: #082746;
+    color: #ddd;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 28px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.ptext .border.trans {
+    background-color: transparent;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+@media(max-width:568px) {
+    body, html {
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 1.5em;
+        color: #555;
+    overflow: hidden;
+        
+    }
+    .pimg1, .pimg2, .pimg3, .pimg4 {
+        background-attachment: fixed;
+        /*scroll; /* no parallax effect for mobile devices*/
+    }
+    .ptext {
+        font-size: 16px;
+    }
+}

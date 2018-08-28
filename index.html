@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parallax website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="pimg1">
+        <div class="ptext">
+            <span class="border">
+                <a class="btn" href="#img1" id="parallax-effect">parallax effect</a>
+            </span>
+        </div>
+    </div>
+
+    <section class="section section-light">
+        <h2>Section one</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam consequatur ullam vero aspernatur quos dolores,
+            alias eum, qui recusandae fuga necessitatibus dignissimos doloremque animi voluptatibus blanditiis voluptas temporibus
+            repellat illum ipsam impedit eligendi unde sequi? Voluptatem sit culpa quos, necessitatibus aliquid dicta sed
+            ipsa voluptatibus error in pariatur facere eaque quod molestiae delectus suscipit excepturi repellendus? Modi
+            dicta necessitatibus tenetur nostrum. Illum commodi, nesciunt aliquam ex voluptates labore. Deleniti impedit
+            dolor maiores nisi blanditiis quod commodi ab veniam sapiente optio excepturi officiis molestiae aliquid quas
+            ipsa ad temporibus, facere dolore omnis! Praesentium aspernatur nihil corporis doloremque maxime atque molestiae
+            cupiditate!
+        </p>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div id="image" class="pimg2">
+                <div class="ptext">
+                    <span class="border trans">
+                        Image two text
+                    </span>
+                </div>
+            </div>
+            <section class="section section-dark">
+                <h2>Section two</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam consequatur ullam vero aspernatur quos
+                    dolores, alias eum, qui recusandae fuga necessitatibus dignissimos doloremque animi voluptatibus blanditiis
+                    voluptas temporibus repellat illum ipsam impedit eligendi unde sequi? Voluptatem sit culpa quos, necessitatibus
+                    aliquid dicta sed ipsa voluptatibus error in pariatur facere eaque quod molestiae delectus suscipit excepturi
+                    repellendus? Modi dicta necessitatibus tenetur nostrum. Illum commodi, nesciunt aliquam ex voluptates
+                    labore.
+                    <button onclick="on()">Turn on overlay effect</button>
+                </p>
+                <div id="overlay" onclick="off()">
+                    <div class="pimg2"></div>
+                </div>
+
+            </section>
+        </div>
+
+        <div class="row">
+            <div class="pimg3">
+                <div class="ptext">
+                    <span class="border trans">
+                        Image Three Text
+                    </span>
+                </div>
+            </div>
+            <section class="section section-dark">
+                <h2>Section Three</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam consequatur ullam vero aspernatur quos
+                    dolores, alias eum, qui recusandae fuga necessitatibus dignissimos doloremque animi voluptatibus blanditiis
+                    voluptas temporibus repellat illum ipsam impedit eligendi unde sequi? Voluptatem sit culpa quos, necessitatibus
+                    aliquid dicta sed ipsa voluptatibus error in pariatur facere eaque quod molestiae delectus suscipit excepturi
+                    repellendus? Modi dicta necessitatibus tenetur nostrum. Illum commodi, nesciunt aliquam ex voluptates
+                    labore. </p>
+            </section>
+        </div>
+        <div class="row">
+            <div class="pimg4">
+                <div class="ptext">
+                    <span class="border trans">
+                        Image Four Text
+                    </span>
+                </div>
+            </div>
+            <section class="section section-dark">
+                <h2>Section Three</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam consequatur ullam vero aspernatur quos
+                    dolores, alias eum, qui recusandae fuga necessitatibus dignissimos doloremque animi voluptatibus blanditiis
+                    voluptas temporibus repellat illum ipsam impedit eligendi unde sequi? Voluptatem sit culpa quos, necessitatibus
+                    aliquid dicta sed ipsa voluptatibus error in pariatur facere eaque quod molestiae delectus suscipit excepturi
+                    repellendus? Modi dicta necessitatibus tenetur nostrum. Illum commodi, nesciunt aliquam ex voluptates
+                    labore. </p>
+            </section>
+        </div>
+    </div>
+
+    <div class="pimg1">
+        <div class="ptext">
+            <span class="border">
+                Parallax Website
+            </span>
+        </div>
+    </div>
+
+    <!--script for smoth transition-->
+    <script src="./js/script.js"></script>
+    <script>
+        function on() {
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
